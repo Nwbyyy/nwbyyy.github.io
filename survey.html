@@ -3,7 +3,54 @@
 <head>
   <title>Survey Form</title>
   <meta charset='utf-8'>
-  <link rel="style" href='survey_styles.css'>
+  <style>
+    body {
+  background-color: #322345;
+  color: #b3b3b3;
+  font-size: 16px;
+  font-family: Monospace;
+}
+label, p {
+  display: block;
+}
+h1, p {
+  text-align: center;
+}
+form {
+  padding: 5%;
+  margin: 0 5% 0 5%;
+  background-color: #1c1326;
+}
+input,
+textarea,
+select {
+  margin: 5px 0 5px 0;
+  width: 100%;
+  min-height: 2em;
+}
+input[type='radio'],input[type='checkbox']{ 
+  margin: unset;
+  width: unset;
+  min-height: unset;
+}
+input, textarea, option {
+  background-color: #322345;
+  border: 2px solid #150E1B;
+  color: #ffffff;
+}
+.classes,.clubs {
+  margin: 10px 0 10px 0;
+}
+input[type="submit"] {
+  display: block;
+  width: 100px;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+}
+  </style>
 </head>
 <body>
   <h1 id='title'>WPI Survey Form</h1>
