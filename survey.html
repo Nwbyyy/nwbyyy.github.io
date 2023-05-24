@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <meta charset='utf-8'>
+  <link rel="style" href='survey_styles.css'>
+</head>
+<body>
+  <h1 id='title'>WPI Survey Form</h1>
+  <p id='description'>A form to give feedback and record statistics on WPI!</p>
+  <form id='survey-form'>
+  <label id='name-label' for='name'>Input your name: <input required id='name' type='text' placeholder='John Doe'></label>
+  <label id='email-label' for='email'>Input your email: <input required id='email' type='email' placeholder='email@domain.com'></label>
+  <label id='number-label' for='number'>Input your class year: <input required id='number' type='number' min='1900' max='2025' placeholder='2026'></label>
+  <label for='dropdown'>Choose your major: <select id='dropdown'>
+    <option>(Select One)</option>
+    <option>Computer Science</option>
+    <option>Data Science</option>
+    <option>IMGD</option>
+    <option>Chemistry</option>
+    <option>Chemical Engineering</option>
+    <option>Physics</option>
+    <option>Other</option>
+  </select>  
+  </label>
+  <div class='classes'>
+    <label>How many classes are you enrolled in?
+      <input value='0' name='num_classes' type='radio'> 0
+      <input value='1' name='num_classes' type='radio'> 1-2
+      <input value='3' name='num_classes' type='radio' checked=''> 3 
+      <input value='4' name='num_classes' type='radio'> 4+
+    </label>
+    </div>
+    <div class='clubs'>
+    <label>What clubs do you activley attend?
+    <label><input value='0' checked='' type='checkbox'> None</label>
+    <label><input value='1' type='checkbox'> Alliance</label>
+    <label><input value='2' type='checkbox'> Bowling Club</label>
+    <label><input value='3' type='checkbox'> Collablab</label>
+    <label><input value='4' type='checkbox'> Exploradream</label>
+    <label><input value='5' type='checkbox'> College Republicans</label>
+    <label><input value='6' type='checkbox'> QSU</label>
+    <label><input value='6' type='checkbox'> Other(s)</label></label>
+    </div>
+
+  <label>Any comments or suggestions? <textarea id='comments' rows='3' cols='30' placeholder='How are you so cool?'></textarea>
+  </label>
+  <input id='submit' type='submit' value='Turn In'>
+  </form>
+</body>
+</html>
